@@ -25,7 +25,7 @@ const Navbar = () => {
     }, []);
 
   return (
-    <div className={shadow ? 'fixed w-full h-20 shadow-xl z-[100] bg-[#242629]' : 'fixed w-full h-20 z-[100] bg-[#242629] text-[#fffffe]'}>
+    <div className={shadow ? 'fixed w-full h-20 shadow-xl z-[100] bg-[#242629] text-[#fffffe]' : 'fixed w-full h-20 z-[100] bg-[#242629] text-[#fffffe]'}>
         {/*Top Bar*/}
         <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
             <h1 className='font-mono text-[#4fc4cf]'>{'<'}as/{'>'}</h1>

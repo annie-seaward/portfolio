@@ -3,15 +3,16 @@ import Image from 'next/image'
 import {AiOutlineMail} from 'react-icons/ai'
 import {FaLinkedinIn, FaGithub} from 'react-icons/fa'
 import {BsPersonLinesFill} from 'react-icons/bs'
-import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
+import {MdOutlineWavingHand} from 'react-icons/md'
+import {RoughNotation} from "react-rough-notation"
 
 const Main = () => {
   return (
     <div id='main' className='w-full md:h-screen p-2 flex items-center py-16'>
         <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8 text-center'>
             <div className='w-full h-auto m-auto col-span-2'>
-                <h1 className='py-4 text-gray-700'>
-                    Hi, I'm Annie 👋🏻
+                <h1 className='py-4 text-gray-700 flex justify-center items-center'>
+                    Hi, I'm Annie <MdOutlineWavingHand className='ml-4'/>
                 </h1>
                 <h2 className='uppercase text-sm tracking-widest text-gray-600'>
                     <RoughNotation type="underline" show={true} color="#8bd3dd">
@@ -34,18 +35,26 @@ const Main = () => {
                     Currently, I am focused on learning how to create <RoughNotation type="highlight" show={true} color="#f582ae" animationDelay="2000">beautiful, reponsive and interactive web applications</RoughNotation>.
                 </p>
                 <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-75'>
-                        <FaLinkedinIn />
-                    </div>
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-75'>
-                        <FaGithub />
-                    </div>
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-75'>
-                        <AiOutlineMail />
-                    </div>
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-75'>
-                        <BsPersonLinesFill />
-                    </div>
+                    <RoughNotation 
+                        className='p-3 cursor-pointer hover:scale-105 ease-in duration-75' 
+                        type="circle" show={true} color="#7f5af0" animationDelay="2500">
+                            <FaLinkedinIn />
+                    </RoughNotation>
+                    <RoughNotation 
+                        className='p-3 cursor-pointer hover:scale-105 ease-in duration-75'
+                        type="circle" show={true} color="#7f5af0" animationDelay="2500">
+                            <FaGithub />
+                    </RoughNotation>
+                    <RoughNotation 
+                        className='p-3 cursor-pointer hover:scale-105 ease-in duration-75'
+                        type="circle" show={true} color="#7f5af0" animationDelay="2500">
+                            <AiOutlineMail />
+                    </RoughNotation>
+                    <RoughNotation 
+                        className='p-3 cursor-pointer hover:scale-105 ease-in duration-75'
+                        type="circle" show={true} color="#7f5af0" animationDelay="2500">
+                            <BsPersonLinesFill />
+                    </RoughNotation>
                 </div>
             </div>
             <div className='w-full h-auto m-auto flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
