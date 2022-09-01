@@ -11,28 +11,21 @@ const Main = () => {
     <div id='main' className='w-full md:h-screen p-2 flex items-center py-16'>
         <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8 text-center'>
             <div className='w-full h-auto m-auto col-span-2'>
-                <h1 className='py-4 text-gray-700 flex justify-center items-center'>
-                    Hi, I'm Annie <MdOutlineWavingHand className='ml-4'/>
+                <h1 className='py-4 flex justify-center items-center'>
+                    Hi <MdOutlineWavingHand className='mx-4 text-4xl' color="8bd3dd" />, I'm Annie 
                 </h1>
-                <h2 className='uppercase text-sm tracking-widest text-gray-600'>
-                    <RoughNotation type="underline" show={true} color="#8bd3dd">
+                <h2 className='uppercase text-sm tracking-widest'>
+                    <RoughNotation type="underline" show={true} color="#8bd3dd" multiline="true">
                     A Student Software Developer
                     </RoughNotation>
                 </h2>
                 <br/>
-                <p className='py-4 text-gray-600 max-w-[80%] m-auto'>
+                <p className='py-4 max-w-[80%] m-auto'>
                     I am a{' '}
-                    <RoughNotation type="highlight" show={true} color="#8bd3dd" animationDelay="1000">
-                        Combined STEM student
-                    </RoughNotation>
-                    , focussing in{' '}
-                    <RoughNotation type="box" show={true} color="#f582ae" animationDelay="1500">
-                    web development
-                    </RoughNotation>
-                    , with innovation design and earth science.
+                    <RoughNotation type="highlight" show={true} color="#8bd3dd" animationDelay="1000" multiline="true">Combined STEM student</RoughNotation>, focussing in  <RoughNotation type="box" show={true} color="#f582ae" animationDelay="1500" multiline="true" >web development</RoughNotation>, with innovation design and earth science.
                     <br/><br/>
                     I am passionate about all things technology, coding and design.
-                    Currently, I am focused on learning how to create <RoughNotation type="highlight" show={true} color="#f582ae" animationDelay="2000">beautiful, reponsive and interactive web applications</RoughNotation>.
+                    Currently, I am focused on learning how to create <RoughNotation type="highlight" show={true} color="#f582ae" animationDelay="2000" multiline="true">beautiful, reponsive and interactive</RoughNotation> web applications.
                 </p>
                 <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
                     <RoughNotation 
@@ -58,7 +51,7 @@ const Main = () => {
                 </div>
             </div>
             <div className='w-full h-auto m-auto flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
-                <Image className='rounded-xl' src="/../public/headshot.png" width='800' height='800' alt='/' />
+                <Image src="/../public/headshot.png" width='800' height='800' alt='/' />
             </div>
         </div>
     </div>
