@@ -5,8 +5,8 @@ import ProjectItem from './ProjectItem'
 const Projects = () => {
   return (
     <div id='projects' className='w-full p-2'>
-		<div className='max-w-[1240px] mx-auto px-2 py-16 tracking-widest'>
-            <h2 className='uppercase text-sm py-4'>Some Projects that I've recently made:</h2>
+		<div className='max-w-[1240px] mx-auto py-8 tracking-widest'>
+            <h2 className='uppercase text-sm py-4 px-4'>Some Projects that I've recently made:</h2>
 			<div className='grid md:grid-cols-2 gap-8'>
 
 				<ProjectItem 

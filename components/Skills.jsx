@@ -3,12 +3,12 @@ import Image from 'next/image'
 
 const Skills = () => {
   return (
-    <div id='skills' className='w-full p-2 tracking-widest'>
-        <div className='max-w-[1240px] mx-auto px-2 py-16 flex flex-col justify-center h-full'>
-            <h2 className='uppercase text-sm py-4'>Technologies I'm loving learning:</h2>
+    <div id='skills' className='w-full tracking-widest'>
+        <div className='max-w-[1240px] mx-auto px-2 pt-16 flex flex-col justify-center h-full'>
+            <h2 className='uppercase text-sm py-4 px-4'>Technologies I'm loving learning:</h2>
             <div className='flex flex-wrap gap-8 justify-center items-center'>
 
-                <div className='p-6 hover:scale-105 ease-in duration-300'>
+                <div className='px-6 hover:scale-105 ease-in duration-300'>
                     <div className='grid grid-rows-2 gap-0.5 justify-center items-center'>
                         <div className='m-auto'>
                             <Image src='/../public/skills/html.png' width='64' height='64' alt='/' />
