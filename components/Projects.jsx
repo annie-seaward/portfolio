@@ -1,4 +1,5 @@
 import React from 'react'
+import ouClassification from '../public/ou-screenshot.png'
 import cryptoImg from '../public/crypto.jpg'
 import ProjectItem from './ProjectItem'
 
@@ -10,10 +11,10 @@ const Projects = () => {
 			<div className='grid md:grid-cols-2 gap-8'>
 
 				<ProjectItem 
-					title='First Project'
-                    technologies='React JS | Tailwind' 
-					backgroundImg={cryptoImg} 
-					projectUrl='/first' />
+					title='OU Degree Classification Calculator'
+                    technologies='HTML | CSS | Vanilla JS' 
+					backgroundImg={ouClassification} 
+					projectUrl='/ou-class-calculator' />
 
 				<ProjectItem 
 					title='Second Project'
